@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.display-flex {
+    display: flex;
+}
+
+main {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+}
+
+.bgImg {
+    background: url(img/Reisinformatie-over-New-York\ 1.png) no-repeat right;
+    width: 53%;
+}
+
+.ringhtBox {
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    margin-left: -35px;
+}
+
+.bigForm {
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.bigForm>label {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #003D61;
+    display: flex;
+    flex-direction: column;
+}
+
+.desINput {
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #003D61;
+    border-left: 1px solid #003D61;
+    padding: 0 20px;
+}
+
+.agreeBox {
+    align-items: center;
+}
+
+.log-in {
+    margin: 0 auto;
+}
+
+.contact {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pinkA {
+    color: #ED2980;
+}
+
+
+/* chekbox */
+
+.agreeBox>p {
+    margin-left: 9px;
+}
+
+.switch {
+    position: relative;
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #233D4E;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+
+/* input:checked+.slider {
+    background-color: #2196F3;
+} */
+
+input:checked+.slider:before {
+    transform: translateX(15px);
+}
+
+.responsive {
+    display: none;
+}
