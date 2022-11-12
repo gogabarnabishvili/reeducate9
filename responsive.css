@@ -33,6 +33,7 @@
         border-bottom: 1px solid #4F4F4F;
         padding: 0;
         color: #003D61;
+        font-size: 16px;
     }
     .desINput:focus {
         outline: none;
