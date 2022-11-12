@@ -8,6 +8,7 @@
     main {
         width: 100%;
         flex-wrap: wrap;
+        padding: 0;
     }
     .bgImg {
         width: 100%;
@@ -33,9 +34,8 @@
         padding: 0;
         color: #003D61;
     }
-    .desINput[type="password"] {
-        font-size: 60px;
-        padding: 0px 0 35px;
+    .desINput:focus {
+        outline: none;
     }
     .pinkA {
         color: #ED2980;
